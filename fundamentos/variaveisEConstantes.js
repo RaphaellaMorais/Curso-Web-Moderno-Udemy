@@ -22,5 +22,5 @@ const c = 5;
  - E a outra declara constante - const
  */
 
-//Tudo que vc não tem motivo para mudar dentro do seu algoritmo, comece colocando uma constante;
-//Caso eu precise reatribuir um valor para determinada variável, eu uso o let; 
+//Tudo que vc não tem motivo para mudar dentro do seu algoritmo, comece colocando uma const;
+//Caso eu precise reatribuir um valor para determinada variável - uso o let; 
