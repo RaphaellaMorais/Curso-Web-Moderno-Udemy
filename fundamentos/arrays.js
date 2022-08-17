@@ -22,3 +22,71 @@ delete valores[0]; //excluir/retirar um atributo de dentro do objeto;
 console.log(valores);
 
 console.log(typeof valores); //p verificar o tipo do array, que é do tipo object;
+
+
+
+//-------------------------Praticando 
+console.log("======================================")
+
+var frutas = ['Maçã', 'Banana', 'Melancia', 'Caju', 'Goiaba'];
+
+console.log(frutas.length);
+
+//Acessando um item do array:
+
+var segundaFruta = frutas[1];
+
+var ultimaFruta = frutas[frutas.length - 1]; //length-propriedade retorna o número de unidades de código presentes
+
+console.log(segundaFruta, ultimaFruta);
+
+//Interar um array 
+
+frutas.forEach(function (item, indice) {
+    console.log(item,"-",indice);
+});
+
+//Adicionar um item ao final do array:
+
+var adicionar = frutas.push('Laranja');
+console.log(frutas);
+
+//Remover um item do final do array:
+
+var ultimo = frutas.pop();
+console.log(frutas);
+
+//Remover do início do array
+var primeiro = frutas.shift();
+console.log(frutas);
+
+//Adicionar ao início do array:
+var adicionar = frutas.unshift('Morango')
+console.log(frutas);
+
+//Procurar o índice de um item na array:
+var procurarFruta = frutas.indexOf('Banana');
+console.log(procurarFruta);
+
+//Remover um item pela posição do índice:
+var removerItem = frutas.splice(procurarFruta, 1);
+console.log(frutas);
+
+
+//Remover itens de uma posição de índice:
+console.log("Remover itens de uma posição de índice:");
+
+var materiais = ['lapis', 'caneta', 'caderno', 'borracha'];
+console.log(materiais);
+
+var posicao = 1, quantidade = 2;
+
+var itensRemovidos = materiais.splice(posicao, quantidade);
+
+console.log(materiais);
+console.log(itensRemovidos);
+
+//Copiar um array:
+console.log('Copiar um array:')
+var copiarArray = frutas.slice();
+console.log(copiarArray);

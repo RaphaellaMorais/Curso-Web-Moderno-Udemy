@@ -5,3 +5,5 @@ var numero = 1;
 }
 
 console.log('fora =', numero);
+
+//posso ter duas variáveis de nomes iguais, desde que estejam em escopos diferentes;

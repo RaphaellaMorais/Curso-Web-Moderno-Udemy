@@ -15,6 +15,27 @@ function soma(a, b = 1) {
 }
 
 console.log(soma(2, 3));
-console.log(soma(2));
+console.log(soma(2)); //aqui ele vai considerar o valor que passei em b = 1
 console.log(soma());
 
+/*Funções são blocos de construção fundamentais em JavaScript. 
+Uma função é um procedimento - um conjunto de instruções que executa uma tarefa ou calcula um valor. 
+Para usar uma função, você deve defini-la em algum lugar no escopo do qual você quiser chamá-la. */
+
+
+//----------------------------Praticando
+console.log("======================================")
+
+function imprimirNome(a, b) { //function (palavra reservada p definir uma função), nome da função, parâmetros,
+    console.log(a + b) // não retorna nada como resposta
+}
+
+imprimirNome('Raphaella ', 'Morais');
+
+
+function imprimirNome(a, b = "Morais") {
+    console.log(a + b)
+}
+
+imprimirNome('Raphaella ', 'Nascimento');
+imprimirNome('Raphaella ');
