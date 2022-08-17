@@ -7,7 +7,7 @@ console.log(isAtivo);
 isAtivo = 1;
 console.log();
 
-//seu eu passar para o cosole apenas o isAtivo, ele vai imprimir um número;
+//seu eu passar para o console apenas o isAtivo, ele vai imprimir um número;
 //Como faço para transformar um valor para verdadeiro ou falso?
 //Pode usar a negação "!";
 //Se vc tem um valor verdadeiro e coloca uma negação na frente aquele valor vira não verdadeiro, ou seja falso;

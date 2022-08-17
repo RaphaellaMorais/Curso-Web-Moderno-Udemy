@@ -4,9 +4,9 @@
 //JSON (javascript object notation ) um objeto em js não é a mesma coisa q json;
 //Json é um formato textual, será tratado mais no futuro;
 
-//Em js vc pode criar um obejto e definir como esse objeto é, os atributos, comportamentos, funções dele, dinâmicamente;
-//Obejeto em js é sempre uma coleção de chaves e valores, vc tem o nome do atributo e passo um valor p ele, que pode ser texto, numero, boolean, pode ser uma função ;
-//Vc pode ter um objeto dentro de outro objeto;
+//Em js vc pode criar um objeto e definir como esse objeto é, os atributos, comportamentos, funções dele, dinâmicamente;
+//Objeto em js é sempre uma coleção de pares - chave e valor, vc tem o nome do atributo e passa um valor p ele, que pode ser texto, numero, boolean, pode ser uma função ;
+
 
 const prod1 = {}; // um par de chaves representa um objeto;
 prod1.nome = 'Celular Ultra Mega';
@@ -23,3 +23,12 @@ const prod2 = {
 };
 
 console.log(prod2);
+
+//-----------Meu exemplo 
+
+const livro = {
+    nome: 'Nome do livro',
+    preco: 80.00
+};
+
+console.log(livro);

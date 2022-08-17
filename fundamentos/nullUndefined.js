@@ -25,7 +25,7 @@ console.log(c);
 
 //--------- Trabalhando com conceito de null, já com a referência de apontar p o endereço de memória;
 
-let valor // não inicializada
+let valor // variável não inicializada
 console.log(valor); //será undefined porq n atribui nenhum valor p essa variável 
 
 valor = null; //null significa que se vc tem uma variável ela não está apontando p nenhum endereço de memória e nenhum valor dentro dela;
@@ -36,16 +36,16 @@ console.log(valor);
 
 const produto = {};
 console.log(produto.preco);
-console.log(produto);
+console.log("sem preço definido",produto);
 
 produto.preco = 3.50;
-console.log(produto);
+console.log("com preço definido",produto);
 
 produto.preco = undefined; //evite atribuir de forma explicita o undefined, deixar a própria linguagem fazer; 
-//console.log(!!produto.preco);
+//console.log(!!produto.preco); //convertendo p boolean, como é undefined vai dar falso;
 //delete produto.preco;
 console.log(produto);
 
 produto.preco = null; //este produto está sem preço
-console.log(!!produto.preco);
+console.log(!!produto.preco);  
 console.log(produto);
