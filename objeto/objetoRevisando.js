@@ -1,7 +1,7 @@
 //coleção dinâmica de pares chave/valor
 const produto = new Object
-produto.nome = 'Cadeira'
-produto['marca do produto'] = 'Generica'
+produto.nome = 'Cadeira' //forma de acrescentar
+produto['marca do produto'] = 'Generica' //forma de acrescentar
 produto.preco = 220
 
 //criação literal de objetos
@@ -38,9 +38,9 @@ carro.proprietario.endereco.numero = 1000;
 carro['proprietario']['endereco']['logradouro'] = 'Av Gigante';
 console.log(carro);
 
-delete carro.condutores;
+//delete carro.condutores;
 delete carro.proprietario.endereco;
 delete carro.calcularValorSeguro;
 console.log(carro);
 console.log(carro.condutores);
-console.log(carro.condutores.length)
+console.log(carro.condutores.length) //vai dar problema por causa do delete carro.condutores;

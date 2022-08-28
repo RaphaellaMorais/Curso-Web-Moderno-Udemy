@@ -1,13 +1,13 @@
-// usando a notação literal 
+//Formas de criar objetos
+//criando usando a notação literal 
 const obj1 = {}
 console.log(obj1)
 
 // Object em Js
-console.log(typeof Object, typeof new Object)
-const obj2 = new Object
+console.log(typeof Object, typeof new Object) //objeto criado apartir de uma função construtora
 console.log(obj2)
 
-//Funçẽs construtoras (a mesma da segundo dó q é uma função sua)
+//vc pode tbm criar as suas proprias Funções construtoras (a mesma da segundo só q é uma função sua)
 function Produto(nome, preco, desc) {
     this.nome = nome
     this.getPrecoComDesconto = () => {
