@@ -1,5 +1,5 @@
 const carrinho = [
-    '{ "nome": "Borracha", "preco": 3.45 }',
+    '{ "nome": "Borracha", "preco": 3.45 }', //os 4 elementos são do tipo JSON
     '{ "nome": "Caderno", "preco": 13.90 }',
     '{ "nome": "Kit de Lapis", "preco": 41.22 }',
     '{ "nome": "Caneta", "preco": 7.50 }'

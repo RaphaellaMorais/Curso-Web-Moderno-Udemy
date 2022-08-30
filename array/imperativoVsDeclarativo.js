@@ -10,7 +10,7 @@ for (let i = 0; i < alunos.length; i++) {
 }
 console.log(total1 / alunos.length)
 
-// Declarativo
+// Declarativo (mais preocupado com oq eu quero do q como a aplicação vai trazer )
 const getNota = aluno => aluno.nota
 const soma = (total, atual) => total + atual
 
