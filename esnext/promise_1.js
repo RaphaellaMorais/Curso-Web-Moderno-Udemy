@@ -1,12 +1,12 @@
-let a = 1;
+/*let a = 1;
 console.log(a);
 
 console.log(typeof Promise) //uma promise é uma function 
 //quando vc cria uma nova promise ele vai criar um objeto
 
-/*let p = new Promise(function(cumprirPromessa){
+let p = new Promise(function(cumprirPromessa){
     cumprirPromessa(3)
-})*/
+})
 
 let p = new Promise(function(cumprirPromessa){
     cumprirPromessa({
@@ -26,5 +26,15 @@ p.then(function(valor){  //sempre é devolvido um valor
 
 //outra forma:
 
-p.then(valor => console.log(valor))
+p.then(valor => console.log(valor)) */
 
+const primeiroElemento = arrayOuString => arrayOuString[0]
+const letraMinuscula = letra => letra.toLowerCase()
+
+new Promise(function(resolve) {
+    resolve(['Ana', 'Bia', 'Carlos', 'Daniel'])
+})
+    .then(primeiroElemento)
+    .then(primeiroElemento)
+    .then(letraMinuscula)
+    .then(console.log)
