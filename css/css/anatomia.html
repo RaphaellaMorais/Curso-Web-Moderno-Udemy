@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .seletor {
+            color: #fff;
+            font-size: 30px;
+            text-align: center; /*text-align tem um valor predefinido*/
+            /*multiplos valores*/
+            border: solid 5px navy; /*conhecido como: shorthand property*/
+            font-family: Arial, Helvetica, sans-serif;
+            /*funções predefinidas no css*/
+            width: calc(100% - 40px);
+            background-color: rgb(34, 153, 189);
+
+        }
+
+        /*Usando uma pseudo-classe*/ 
+        .seletor:hover {
+            background-color: orangered;
+        }
+
+        /*Usando um pseudo-elemento*/
+        .seletor::first-letter {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+/*padrão de nomenclatura?*/ 
+/*dash-case ou camelCase? 
+o importante é manter uma consistencia dentro do código*/       
+
+    </style>
+</head>
+
+<body>
+    <div class="seletor">Conteúdo</div>
+</body>
+
+</html>
